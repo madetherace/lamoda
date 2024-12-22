@@ -1,0 +1,41 @@
+.productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 10px;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+  
+  .notFound {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 1224px) {
+    .productList {
+        width: 80%;
+      margin-right: 0px;
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productList {
+        width: 90%;
+        margin-right: 20px;
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productList {
+        width: 80%;
+        margin-right: 20px;
+      grid-template-columns: 1fr; 
+      margin-left: 40px;
+    }
+  }
